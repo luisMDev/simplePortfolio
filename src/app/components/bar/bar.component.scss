@@ -1,0 +1,37 @@
+:host {
+  padding: 0 30px;
+  &:nth-child(odd) {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .content {
+    height: 30px;
+    border-bottom: 2px solid #37474f;
+    border-left: 2px solid #37474f;
+    //padding: 2px;
+    width: 100%;
+    position: relative;
+    .bar {
+      height: 100%;
+      //background: #ffeb3b;
+    }
+    .rect {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      // background: #fefacb;
+      background: #ffeb3b;
+      top: 10px;
+      left: 10px;
+      //transform: rotateZ(3deg);
+      z-index: -1;
+    }
+  }
+  h4 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #37474f;
+  }
+}

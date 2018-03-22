@@ -1,30 +1,47 @@
 :host {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   float: left;
   width: 100%;
   transition: 0.25s;
-  cursor: pointer;
-  background: #fff;
   border-radius: 4px;
-  overflow: hidden;
   padding-left: 50px;
   display: flex;
-
+  &:nth-child(even) {
+    margin-top: 100px;
+    margin-bottom: -20px;
+  }
   .bg {
-    transform: translateY(-15px);
     transition: 0.25s;
     width: 100%;
     float: left;
-    // height: 260px;
     background-position: center;
     background-size: cover;
-    // border-radius: 10px;
-    // border-radius: 4px;
-    overflow: hidden;
-    min-height: 200px;
     background: #37474f;
-    border-bottom: 5px solid #ffec3a;
+    //border-bottom: 5px solid #37474f;
+    min-width: 170px;
+    width: 170px;
+    min-height: 170px;
+    height: 174px;
+    margin-top: 25px;
+    position: relative;
+    .rect {
+      position: absolute;
+      right: -40px;
+      bottom: -40px;
+      opacity: 0.3;
+      z-index: -1;
+      background: #ffeb3b;
+      height: 120px;
+      min-height: 120px;
+      width: 120px;
+      min-width: 120px;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   .goTo {
@@ -41,7 +58,7 @@
     }
   }
 
-  > div {
+  .content {
     padding-left: 30px;
     .title {
       float: left;

@@ -1,0 +1,116 @@
+:host {
+  position: relative;
+  margin-bottom: 50px;
+  float: left;
+  width: 100%;
+  transition: 0.25s;
+  border-radius: 4px;
+  padding-left: 50px;
+  display: flex;
+  margin-left: 60px;
+
+  &:nth-child(odd) {
+    margin-left: 100px;
+    .rect {
+      position: absolute;
+      right: 46px;
+      transform: rotateZ(20deg);
+      transform-origin: top center;
+      bottom: -120px;
+      //opacity: 0.3;
+      z-index: -1;
+      background: #ffeb3b;
+      height: 140px;
+      min-height: 140px;
+      width: 10px;
+      min-width: 10px;
+    }
+  }
+  &:nth-child(even) {
+    .rect {
+      position: absolute;
+      right: 46px;
+      transform: rotateZ(-20deg);
+      transform-origin: top center;
+      bottom: -120px;
+      //opacity: 0.3;
+      z-index: -1;
+      background: #ffeb3b;
+      height: 140px;
+      min-height: 140px;
+      width: 10px;
+      min-width: 10px;
+    }
+  }
+  &:last-of-type {
+    .rect {
+      display: none;
+    }
+  }
+  .bg {
+    transition: 0.25s;
+    width: 100%;
+    float: left;
+    background-position: center;
+    background-size: contain;
+    //border-bottom: 5px solid #37474f;
+    min-width: 110px;
+    width: 110px;
+    min-height: 110px;
+    height: 110px;
+    margin-top: 25px;
+    position: relative;
+    background: #fff;
+    padding: 4px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      filter: grayscale(100%);
+    }
+  }
+
+  .goTo {
+    float: right;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 20px 20px;
+    opacity: 0.6;
+    font-weight: 400 !important;
+    i {
+      font-size: 18px;
+      margin-left: 5px;
+    }
+  }
+
+  .content {
+    padding-left: 50px;
+    .title {
+      float: left;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 24px;
+      min-height: 34px;
+      padding: 0 0px;
+      color: #37474f;
+      small {
+        opacity: 0.5;
+      }
+    }
+    p {
+      opacity: 0.6;
+      font-weight: 300;
+      font-size: 14px;
+    }
+    .date {
+      top: 120px;
+      transition: 0.5s;
+      font-size: 12px;
+      color: #37474f;
+      letter-spacing: 2px;
+      left: 40px;
+      text-align: left;
+    }
+  }
+}

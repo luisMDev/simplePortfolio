@@ -1,13 +1,14 @@
 <div class="bg">
   <div class="rect"></div>
-  <img [src]="project.img">
+  <img [src]="job.img">
 </div>
 <div class="content">
   <h3 class="title">
-    _{{ project.title }}
+    {{ job.title }}
+    <small>_{{job.job}}</small>
   </h3>
-  <p>{{ project.desc }}</p>
+  <p>{{ job.desc }}</p>
   <div class="date">
-    _{{ project.time }}
+    _{{ job.time }}
   </div>
 </div>

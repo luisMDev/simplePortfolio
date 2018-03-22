@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StoreService } from '@app/services/store.service';
 
 @Component({
   selector: 'app-landing',
@@ -6,31 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  public projectList = [
-    {
-      img: '',
-      time: '05-20-2018',
-      title: 'Lorem ipsum dolor sit',
-      desc: 'Sint fugiat facilis excepturi omnis iste quaerat molestiae accusantium enim dolores, molestias adipisci fuga dolor minus labore quidem.',
-      url: ''
-    },
-    {
-      img: '',
-      time: '05-20-2018',
-      title: 'Lorem ipsum dolor sit',
-      desc: 'Sint fugiat facilis excepturi omnis iste quaerat molestiae accusantium enim dolores, molestias adipisci fuga dolor minus labore quidem.',
-      url: ''
-    },
-    {
-      img: '',
-      time: '05-20-2018',
-      title: 'Lorem ipsum dolor sit',
-      desc: 'Sint fugiat facilis excepturi omnis iste quaerat molestiae accusantium enim dolores, molestias adipisci fuga dolor minus labore quidem.',
-      url: ''
-    }
-  ];
+  public projectList;
+  public postList;
+  public barList;
+  public jobList;
 
-  constructor() {}
+  constructor(private _storeService: StoreService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this._storeService.getProjectList().then(projectList => {
+      this.projectList = projectList;
+    });
+
+    this._storeService.getPostList().then(postList => {
+      this.postList = postList;
+    });
+
+    this._storeService.getBars().then(barList => {
+      this.barList = barList;
+    });
+
+    this._storeService.getJobList().then(jobList => {
+      this.jobList = jobList;
+    });
+  }
 }
