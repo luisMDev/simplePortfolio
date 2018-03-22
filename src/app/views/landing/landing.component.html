@@ -1,8 +1,28 @@
 <div class="container">
-  <div class="starter-template">
-    <h1>{{'a' | translate }}
-    </h1>
-    <p class="lead">Use this document as a way to quickly start any new project.
-      <br> All you get is this text and a mostly barebones HTML document.</p>
+
+  <app-jumbo>
+    <div class="header text-right" style="padding: 40px 30% 20px 0;">
+      <b>_A</b>bout Me
+    </div>
+    <p style="padding: 20px 30% 20px 10%;font-size:19px;">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque hic dolores, enim porro magni illum eveniet rem expedita
+      dolorem temporibus, modi perspiciatis reprehenderit rerum doloremque animi fugiat quae necessitatibus sapiente?
+    </p>
+  </app-jumbo>
+
+  <div class="row" style="padding-bottom:80px;">
+    <div class="header col-12">
+      <b>_P</b>rojects
+    </div>
+
+    <app-project class="col-6" *ngFor="let project of projectList" [project]="project"></app-project>
+  </div>
+
+  <div class="row">
+    <div class="header text-right col-12">
+      <b>_M</b>edium Post
+    </div>
+
+    <app-post class="col-4" *ngFor="let project of projectList" [post]="project"></app-post>
   </div>
 </div>
