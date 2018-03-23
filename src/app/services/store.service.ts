@@ -51,7 +51,7 @@ export class StoreService {
     return new Promise(resolve => {
       const data = [
         {
-          img: '/assets/cosplayapp.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/luis-code.appspot.com/o/img%2Fcosplayapp.png?alt=media&token=b20bf83c-d4cf-422d-81aa-7d4fe7425289',
           time: '02-20-2018 - Now',
           title: 'Cosplayapp',
           desc: `
@@ -60,7 +60,7 @@ export class StoreService {
           url: 'https://cosplayapp.net/'
         },
         {
-          img: '/assets/peugeot.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/luis-code.appspot.com/o/img%2Fpeugeot.png?alt=media&token=d151a4de-78ee-4526-8fbe-aa3aca466be9',
           time: '05-20-2018',
           title: 'Reuniones Peugeot',
           desc: `
@@ -69,7 +69,7 @@ export class StoreService {
           url: 'https://reunionespeugeot.es/'
         },
         {
-          img: '/assets/emanager.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/luis-code.appspot.com/o/img%2Femanager.png?alt=media&token=98577225-4c2d-40fb-a875-0ea5d39af9c9',
           time: '02-05-2017 - Now',
           title: 'Emanager.gg',
           desc: `
@@ -79,7 +79,7 @@ export class StoreService {
           url: 'https://emanager.gg'
         },
         {
-          img: '/assets/icofolio.png',
+          img: 'https://firebasestorage.googleapis.com/v0/b/luis-code.appspot.com/o/img%2Ficofolio.png?alt=media&token=90ca73f9-ee83-4f62-9f80-cc146cc96fd9',
           time: '01-05-2018 - 01-27-2018',
           title: 'Icofolio',
           desc: `
@@ -96,37 +96,7 @@ export class StoreService {
 
   getPostList() {
     return new Promise(resolve => {
-      const data = [
-        {
-          img: '/assets/cosplayapp.png',
-          time: '02-20-2018 - Now',
-          title: 'Cosplayapp',
-          desc: `
-          Cosplay app es una herramienta y red social para todos los cosplayers que necesitan organizar, 
-          planear y compartir sus cosplays con el resto del mundo.`,
-          url: 'https://cosplayapp.net/'
-        },
-        {
-          img: '/assets/peugeot.png',
-          time: '05-20-2018',
-          title: 'Reuniones Peugeot',
-          desc: `
-          Aplicación web con streaming de video sobre una conferencia de Peugeot, con un sistema de 
-          preguntas a tiempo real realizado íntegramente en firebase y angular2`,
-          url: ''
-        },
-        {
-          img: '/assets/icofolio.png',
-          time: '01-05-2018 - 01-27-2018',
-          title: 'Icofolio',
-          desc: `
-          Proyecto de un par de semanas para llevar la cuenta de las inversiones en criptomonedas
-
-          Crea tu portfolio de ICOs, consulta la evolución de tus inversiones y los eventos que te 
-          interesen, de forma rápida, sencilla y desde cualquier dispositivo.`,
-          url: ''
-        }
-      ];
+      const data = [];
       resolve(data);
     });
   }
