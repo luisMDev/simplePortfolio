@@ -11,6 +11,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SocialComponent } from './components/social/social.component';
 import { BarComponent } from './components/bar/bar.component';
+import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -21,7 +22,7 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LanguageSwitcherComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
