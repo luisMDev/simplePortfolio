@@ -4,11 +4,11 @@
 </div>
 <div class="content">
   <h3 class="title">
-    {{ job.title }}
-    <small>_{{job.job}}</small>
+    {{ job.title | translate}}
+    <small>_{{job.job| translate}}</small>
   </h3>
-  <p>{{ job.desc }}</p>
+  <p>{{ job.desc | translate}}</p>
   <div class="date">
-    _{{ job.time }}
+    _{{ job.time | translate}}
   </div>
 </div>

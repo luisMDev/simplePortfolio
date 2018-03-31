@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
-  public title = `Luis <b>M.</b> Torres`;
-  public subTitle = `Entrepreneur, UI/UX , and Developer`;
-
   constructor() {}
 
   ngOnInit() {}

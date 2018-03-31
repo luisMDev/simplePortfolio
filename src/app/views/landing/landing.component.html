@@ -1,43 +1,22 @@
 <div class="container">
 
   <app-jumbo>
-    <div class="header text-right" style="padding: 40px 30% 20px 0;">
-      <b>_A</b>bout Me
-    </div>
-    <p style="padding: 20px 30% 20px 10%;font-size:19px;">
-      Soy Luis Manuel Torres. Desarrollador web front-end enfocado a poner en práctica las últimas tecnologías del mercado como
-      Firebase en proyectos innovadores. Tengo formación y experiencia en múltiples aptitudes de desarrollo front-end como
-      Angular 4, Sass, Html5, Bootstrap, etc.
-      <br>
-      <br> Me gusta crear aplicaciones limpias, pulidas y pensadas en la usabilidad y accesibilidad del usuario.
-    </p>
+    <div class="header text-right" style="padding: 40px 30% 20px 0;" [innerHTML]="'aboutMeTitle' | translate"></div>
+    <p style="padding: 20px 30% 20px 10%;font-size:19px;" [innerHTML]="'aboutMeText' | translate"></p>
   </app-jumbo>
 
   <div class="row" style="padding-bottom:120px;">
-    <div class="header col-12" style="margin-bottom: -60px;">
-      <b>_P</b>rojects
-    </div>
+    <div class="header col-12" style="margin-bottom: -60px;" [innerHTML]="'projects' | translate"></div>
     <app-project class="col-6" *ngFor="let project of projectList" [project]="project"></app-project>
   </div>
 
-  <div class="row" *ngIf="!projectList?.length">
-    <div class="header text-right col-12">
-      <b>_M</b>edium Post
-    </div>
-    <app-post class="col-4" *ngFor="let project of projectList" [post]="project"></app-post>
-  </div>
-
   <div class="row" style="padding-bottom:120px;">
-    <div class="header text-right col-12" style="margin-bottom: 30px;">
-      <b>_A</b>ptitudes y validaciones
-    </div>
+    <div class="header text-right col-12" style="margin-bottom: 30px;" [innerHTML]=" 'validations' | translate"></div>
     <app-bar class="col-6" *ngFor="let bar of barList" [num]="bar.num" [title]="bar.title"></app-bar>
   </div>
 
   <div class="row" style="padding-bottom:20px;">
-    <div class="header col-12">
-      <b>_E</b>xperiencia
-    </div>
+    <div class="header col-12" [innerHTML]="'experience' | translate"></div>
     <app-job class="col-10" *ngFor="let job of jobList" [job]="job"></app-job>
   </div>
 

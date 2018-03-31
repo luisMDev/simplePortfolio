@@ -1,0 +1,56 @@
+{
+  "title": "Luis <b>M.</b> Torres",
+  "subTitle": "Emprendedor, UI/UX y Developer",
+  "aboutMeTitle": "<b>_S</b>obre Mi",
+  "aboutMeText":
+    "Soy Luis Manuel Torres. Desarrollador web front-end enfocado a poner en práctica las últimas tecnologías del mercado como Firebase en proyectos innovadores. Tengo formación y experiencia en múltiples aptitudes de desarrollo front-end comoAngular 4, Sass, Html5, Bootstrap, etc.<br><br> Me gusta crear aplicaciones limpias, pulidas y pensadas en la usabilidad y accesibilidad del usuario.",
+  "projects": "<b>_P</b>royectos",
+  "validations": "<b>_A</b>ptitudes y validaciones",
+  "experience": "<b>_E</b>xperiencia",
+  "bar1": "_DESARROLLO FRONT-END CON ANGULAR 1.5 Y 2.0",
+  "bar2": "_FIREBASE APP PARA BIG DATA",
+  "bar3": "_HTML5,CSS3,SASS",
+  "bar4": "_DESARROLLO DE PRESTASHOP Y WORDPRESS",
+  "bar5": "_DESARROLLO DE APPS CON IONIC",
+  "bar6": "_DESARROLLO DE APPS CON ANDROID STUDIO Y FIREBASE",
+  "bar7": "_C# Y JS EN PROYECTOS CON UNITY",
+  "project1Title": "Cosplayapp",
+  "project1Text":
+    "Cosplay app es una herramienta y red social para todos los cosplayers que necesitan organizar, planear y compartir sus cosplays con el resto del mundo.",
+  "project1Time": "02-20-2018 - Now",
+  "project2Title": "Reuniones Peugeot",
+  "project2Text":
+    "Aplicación web con streaming de video sobre una conferencia de Peugeot, con un sistema de preguntas a tiempo real realizado íntegramente en firebase y angular2",
+  "project2Time": "05-20-2018",
+  "project3Title": "Emanager.gg",
+  "project3Text":
+    "Toda la gestión de tu equipo de esports en un solo lugar.Toma el mando de tu equipo y organizalo con las herramientas y recursos que utilizan los clubs profesionales para sus entrenamientos y sus partidos clave",
+  "project3Time": "02-05-2017 - Now",
+  "project4Title": "Icofolio",
+  "project4Text":
+    "Proyecto de un par de semanas para llevar la cuenta de las inversiones en criptomonedas Crea tu portfolio de ICOs, consulta la evolución de tus inversiones y los eventos que te interesen, de forma rápida, sencilla y desde cualquier dispositivo.",
+  "project4Time": "01-05-2018 - 01-27-2018",
+  "job1Time": "Abril 2017 - Abril 2018",
+  "job1Title": "Nfq Advisory, Solutions, Outsourcing",
+  "job1Subtitle": "Desarrollador Front End",
+  "job1Text":
+    "Cosplay app es una herramienta y red social para todos los cosplayers que necesitan organizar, planear y compartir sus cosplays con el resto del mundo.",
+  "job2Time": "Jun 2015 - Abril 2017",
+  "job2Title": "Azken services",
+  "job2Subtitle": "Desarrollador Web",
+  "job2Text":
+    "Gestionar y dirigir un equipo de cuatro personas en proyectos web desarrollados en tecnologías como Angular2, firebase, codeigniter, wordpress y prestashop. Comunicación con el cliente final y captación de requisitos para un rápido analisis del proyecto y los recursos necesarios para su realización.",
+  "job3Time": "Sept 2014 - Jun 2015",
+  "job3Title": "Azken Muga",
+  "job3Subtitle": "Desarrollador Web",
+  "job3Text":
+    "Toda la gestión de tu equipo de esports en un solo lugar. Toma el mando de tu equipo y organizalo con las herramientas y recursos que utilizan los clubs profesionales para sus entrenamientos y sus partidos clave",
+  "job4Time": "Sept 2012 - Jul 2012",
+  "job4Title": "Agrupo Sistemas",
+  "job4Subtitle": "Desarrollador SAP",
+  "job4Text": "Curso de ABAP IV y creación de pequeñas herramientas de integración para pequeños clientes con licencias del ERP SAP",
+  "job5Time": "Abr 2012 - Jul 2012",
+  "job5Title": "SIA Group",
+  "job5Subtitle": "Desarrollador de Zabbix",
+  "job5Text": "Creación y automatización de aplicaciones en Perl y Python relacionadas con la herramienta de monitorización Zabbix"
+}

@@ -1,3 +1,5 @@
-<p>
-  language-switcher works!
-</p>
+<div class="switcher">
+  <span [class.active]="language === 'es'" (click)="switch('es')">ESP</span>
+  <span [class.active]="language === 'en'" (click)="switch('en')">ENG</span>
+  <div [class.left]="language === 'es'" [class.right]="language === 'en'" class="back"></div>
+</div>

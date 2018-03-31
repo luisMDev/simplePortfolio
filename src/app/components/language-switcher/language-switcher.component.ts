@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-language-switcher',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./language-switcher.component.scss']
 })
 export class LanguageSwitcherComponent implements OnInit {
+  public language;
 
-  constructor() { }
+  constructor(private translateService: TranslateService) {}
 
   ngOnInit() {
+    this.language = this.translateService.currentLang;
   }
 
+  switch(lang) {
+    this.language = lang;
+    this.translateService.use(lang);
+    console.log(this.translateService.translations);
+
+    console.log(this.translateService.currentLang);
+  }
 }

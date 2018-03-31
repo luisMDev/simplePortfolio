@@ -6,9 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-  @Input() title;
-  @Input() subTitle;
-
   constructor() {}
 
   ngOnInit() {}

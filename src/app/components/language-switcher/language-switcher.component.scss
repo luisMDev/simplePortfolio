@@ -1,0 +1,41 @@
+:host {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  .switcher {
+    position: relative;
+    display: flex;
+    .back {
+      width: 50px;
+      height: 30px;
+      background: #ffeb3b;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      transition: 0.3s;
+      &.left {
+        transform: translateX(0px);
+      }
+      &.right {
+        transform: translateX(60px);
+      }
+    }
+    span {
+      width: 50px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin: 0 10px 0 0;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      &.active {
+        /* border-bottom: 2px solid #37474f;
+          border-left: 2px solid #37474f; */
+        //background: #ffeb3b;
+      }
+    }
+  }
+}
