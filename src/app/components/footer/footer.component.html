@@ -3,10 +3,8 @@
     <div class="social">
 
     </div>
-    <div class="title" [innerHTML]="title"></div>
-    <div class="sub-title">
-      {{subTitle}}
-    </div>
+    <div class="title" [innerHTML]="'title' | translate"></div>
+    <div class="sub-title" [innerHTML]="'subTitle' | translate"></div>
 
   </div>
 </nav>
