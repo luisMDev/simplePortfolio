@@ -1,3 +1,5 @@
+@import 'colors.scss';
+
 :host {
   position: relative;
   margin-bottom: 50px;
@@ -17,9 +19,7 @@
       transform: rotateZ(20deg);
       transform-origin: top center;
       bottom: -120px;
-      //opacity: 0.3;
       z-index: -1;
-      background: #ffeb3b;
       height: 140px;
       min-height: 140px;
       width: 10px;
@@ -33,9 +33,7 @@
       transform: rotateZ(-20deg);
       transform-origin: top center;
       bottom: -120px;
-      //opacity: 0.3;
       z-index: -1;
-      background: #ffeb3b;
       height: 140px;
       min-height: 140px;
       width: 10px;
@@ -53,7 +51,6 @@
     float: left;
     background-position: center;
     background-size: contain;
-    //border-bottom: 5px solid #37474f;
     min-width: 110px;
     width: 110px;
     min-height: 110px;
@@ -93,7 +90,7 @@
       font-size: 24px;
       min-height: 34px;
       padding: 0 0px;
-      color: #37474f;
+      color: $text-primary;
       small {
         opacity: 0.5;
       }
@@ -107,7 +104,7 @@
       top: 120px;
       transition: 0.5s;
       font-size: 12px;
-      color: #37474f;
+      color: $text-primary;
       letter-spacing: 2px;
       left: 40px;
       text-align: left;

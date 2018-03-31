@@ -1,3 +1,5 @@
+@import 'colors.scss';
+
 :host {
   padding: 0 30px;
   &:nth-child(odd) {
@@ -6,24 +8,19 @@
   }
   .content {
     height: 30px;
-    border-bottom: 2px solid #37474f;
-    border-left: 2px solid #37474f;
-    //padding: 2px;
+    border-bottom: 2px solid $text-tertiary;
+    border-left: 2px solid $text-tertiary;
     width: 100%;
     position: relative;
     .bar {
       height: 100%;
-      //background: #ffeb3b;
     }
     .rect {
       position: absolute;
       height: 100%;
       width: 100%;
-      // background: #fefacb;
-      background: #ffeb3b;
       top: 10px;
       left: 10px;
-      //transform: rotateZ(3deg);
       z-index: -1;
     }
   }
@@ -32,6 +29,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #37474f;
+    color: $text-tertiary;
   }
 }

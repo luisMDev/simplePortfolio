@@ -1,3 +1,5 @@
+@import 'colors.scss';
+
 :host {
   .row {
     position: relative;
@@ -6,7 +8,7 @@
       margin-right: -20%;
       padding: 0;
       > .img {
-        background: #37474f;
+        background: $text-primary;
         height: 300px;
         img {
           opacity: 0.5;
@@ -27,7 +29,6 @@
       top: 7%;
       opacity: 0.3;
       z-index: 1000;
-      background: #ffeb3b;
       height: 400px;
       width: 400px;
     }
@@ -35,9 +36,7 @@
       margin-top: 100px;
       height: 500px;
       padding: 0;
-      //background: #ffeb3b;
       img {
-        //opacity: 0.5;
         filter: grayscale(100%);
         object-fit: cover;
         width: 100%;

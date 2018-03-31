@@ -1,0 +1,48 @@
+/* Colors */
+$text-primary: #37474f;
+$text-secondary: #b0bec5;
+$text-tertiary: #37474f;
+
+$color1: #f44336;
+$color2: #673ab7;
+$color3: #03a9f4;
+$color4: #8bc34a;
+$color5: #ffeb3b;
+
+/* Background cycle */
+@keyframes background-change {
+  0% {
+    background: $color1;
+  }
+  25% {
+    background: $color2;
+  }
+  50% {
+    background: $color3;
+  }
+  75% {
+    background: $color4;
+  }
+  100% {
+    background: $color5;
+  }
+}
+
+/* Background cycle */
+@keyframes color-change {
+  0% {
+    color: $color1;
+  }
+  25% {
+    color: $color2;
+  }
+  50% {
+    color: $color3;
+  }
+  75% {
+    color: $color4;
+  }
+  100% {
+    color: $color5;
+  }
+}

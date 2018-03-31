@@ -1,3 +1,5 @@
+@import 'colors.scss';
+
 :host {
   .navbar-brand {
     font-family: 'Pacifico', cursive;
@@ -9,24 +11,18 @@
     .container {
       flex-flow: column;
       padding: 50px 0 80px;
-      // border-bottom: 2px solid #90a4ae;
-      .social {
-      }
       .title {
         font-size: 80px;
         text-transform: uppercase;
         letter-spacing: 0.2px;
         font-weight: 700;
-        color: #37474f;
-        /deep/b {
-          color: #ffeb3b;
-        }
+        color: $text-primary;
       }
       .sub-title {
         font-weight: 100;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: #b0bec5;
+        color: $text-secondary;
         font-size: 20px;
       }
     }

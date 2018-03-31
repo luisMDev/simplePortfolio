@@ -1,14 +1,20 @@
 :host {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  .rect {
+    width: 100vw;
+    height: 5px;
+  }
   .switcher {
+    top: 12px;
+    left: 10px;
     position: relative;
     display: flex;
     .back {
       width: 50px;
       height: 30px;
-      background: #ffeb3b;
       position: absolute;
       top: 0;
       left: 0;
@@ -32,9 +38,8 @@
       position: relative;
       z-index: 1;
       &.active {
-        /* border-bottom: 2px solid #37474f;
-          border-left: 2px solid #37474f; */
-        //background: #ffeb3b;
+        color: #fff;
+        font-weight: bold;
       }
     }
   }

@@ -1,5 +1,6 @@
+<div class="rect background-change"></div>
 <div class="switcher">
   <span [class.active]="language === 'es'" (click)="switch('es')">ESP</span>
   <span [class.active]="language === 'en'" (click)="switch('en')">ENG</span>
-  <div [class.left]="language === 'es'" [class.right]="language === 'en'" class="back"></div>
+  <div class="back background-change" [class.left]="language === 'es'" [class.right]="language === 'en'"></div>
 </div>

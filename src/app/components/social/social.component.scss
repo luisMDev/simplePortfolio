@@ -9,9 +9,9 @@
       font-size: 30px;
       svg {
         color: #37474f;
-        transition: 0.1s;
+        transition: 0.2s;
         &:hover {
-          color: #ffeb3b;
+          transform: scale(1.2);
         }
       }
     }
