@@ -1,4 +1,4 @@
-![SimplePortfolio](https://assets.materialup.com/uploads/c9af7c8b-51f2-4aeb-a898-c1220a982ed9/preview.jpg)
+![SimplePortfolio](src/preview.jpg)
 
 # Simple Portfolio
 
